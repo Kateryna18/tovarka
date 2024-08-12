@@ -483,22 +483,47 @@ input[type="radio"]:checked + .step-two-label {
 }
 
 .under-step-thumb {
-  width: 325px;
-  height: 427px;
+  width: 290px;
+  height: 330px;
+}
+
+@media (min-width: 1600px) {
+  .under-step-thumb {
+    width: 325px;
+    height: 427px;
+  }
 }
 
 .step-free-block.under-step-content {
   width: fit-content;
-  height: 159px;
+  height: 110px;
   padding-top: 0;
   padding-right: 34px;
   padding-left: 34px;
   box-shadow: -12px 12px 0px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
 
+@media (min-width: 1600px) {
+  .step-free-block.under-step-content {
+    width: fit-content;
+    height: 159px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-right: 34px;
+    padding-left: 34px;
+    box-shadow: -12px 12px 0px 0px rgba(0, 0, 0, 0.2509803922) inset;
+  }
+}
+
 .step-free-block-text.under-step-content {
-  font-size: 110px;
-  line-height: calc(110px / 110px);
+  font-size: 75px;
+  line-height: calc(75px / 75px);
+}
+@media (min-width: 1600px) {
+  .step-free-block-text.under-step-content {
+    font-size: 110px;
+    line-height: calc(110px / 110px);
+  }
 }
 
 ///////////----UNDER-STEP FIVE---/////
