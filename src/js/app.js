@@ -55,7 +55,8 @@ function resetToStepThree() {
 
 function updateProgress() {
   steps.forEach((step, index) => {
-    if (index <= currentStep - 1) {
+    if (index <= currentStep) {
+      console.log(currentStep)
       step.classList.add("active");
     } else {
       step.classList.remove("active");
