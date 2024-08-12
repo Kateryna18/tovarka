@@ -874,6 +874,7 @@ input[type=radio]:checked + .step-two-label {
   top: 0;
   left: 0;
   width: 20%;
+  max-width: 98%;
   height: 23px;
   background-color: #32c62d;
   z-index: 0;
