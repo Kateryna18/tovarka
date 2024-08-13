@@ -258,6 +258,20 @@ meter {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "PIXY.woff";
+  font-display: swap;
+  src: url("../fonts/PIXY.woff") format("woff"), url("../fonts/PIXY.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PIXY.woff2";
+  font-display: swap;
+  src: url("../fonts/PIXY.woff") format("woff"), url("../fonts/PIXY.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 /*
 	! Media mixin
 */
@@ -269,7 +283,7 @@ body {
 
 body {
   overflow-x: hidden;
-  font-family: "Born2bSportyFS.woff";
+  font-family: "PIXY.woff2";
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.2rem;
@@ -641,7 +655,7 @@ input[type=radio]:checked + .step-two-label {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 13px;
   border: 10px solid transparent;
   border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="%23FFA600"><polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2"/></svg>') 1;
   background-color: #eb3d00;
@@ -652,7 +666,7 @@ input[type=radio]:checked + .step-two-label {
 @media (min-width: 1400px) {
   .step-two-label-down {
     width: 340px;
-    min-height: 100px;
+    min-height: 110px;
     height: 100px;
     bottom: -15px;
   }
@@ -713,7 +727,10 @@ input[type=radio]:checked + .step-two-label {
   font-size: 20px;
   line-height: 1;
   color: #ffffff;
-  white-space: nowrap;
+}
+
+.step-two-label-down-text.v2 {
+  white-space: normal;
 }
 
 @media (min-width: 1800px) {
@@ -723,10 +740,15 @@ input[type=radio]:checked + .step-two-label {
   }
 }
 .step-two-label-down-text.down {
-  font-size: 16px;
+  font-size: 10px;
   white-space: normal;
 }
 
+@media (min-width: 1800px) {
+  .step-two-label-down-text.down {
+    font-size: 16px;
+  }
+}
 .step-free {
   position: relative;
 }
@@ -767,7 +789,7 @@ input[type=radio]:checked + .step-two-label {
   }
 }
 .step-free-block {
-  width: 614px;
+  width: 714px;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -776,6 +798,12 @@ input[type=radio]:checked + .step-two-label {
   background: #eb3d00;
   background-clip: padding-box;
   box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.2509803922) inset;
+}
+
+.step-free-block.v2 {
+  width: 800px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 1600px) {
