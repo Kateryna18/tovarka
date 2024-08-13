@@ -157,7 +157,8 @@ img {
 
 @include media-width(1600px) {
   .container {
-    max-width: 1400px;
+    // max-width: 1400px;
+    max-width: 1316px;
     /* або інше значення, залежно від вашого макету */
   }
 }
