@@ -252,6 +252,13 @@ meter {
   font-style: normal;
 }
 @font-face {
+  font-family: "PIXY.woff2";
+  font-display: swap;
+  src: url("../fonts/PIXY.woff") format("woff"), url("../fonts/PIXY.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Born2bSportyFS.woff2";
   font-display: swap;
   src: url("../fonts/Born2bSportyFS.woff") format("woff"), url("../fonts/Born2bSportyFS.woff2") format("woff2");
@@ -260,13 +267,6 @@ meter {
 }
 @font-face {
   font-family: "PIXY.woff";
-  font-display: swap;
-  src: url("../fonts/PIXY.woff") format("woff"), url("../fonts/PIXY.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PIXY.woff2";
   font-display: swap;
   src: url("../fonts/PIXY.woff") format("woff"), url("../fonts/PIXY.woff2") format("woff2");
   font-weight: 400;
@@ -1331,7 +1331,7 @@ input[type=radio]:checked + .v2-label {
   border-right: 10px solid #000000;
 }
 
-.box-down__left-content.active {
+.box-down__left-content {
   display: block;
   height: 100%;
   padding: 20px 10px;
@@ -1340,7 +1340,7 @@ input[type=radio]:checked + .v2-label {
 }
 
 @media (min-width: 1600px) {
-  .box-down__left-content.active {
+  .box-down__left-content {
     padding: 30px 16px;
     padding-right: 24px;
     box-shadow: -15px 15px 0px 0px rgba(0, 0, 0, 0.2509803922) inset;
