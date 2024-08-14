@@ -411,51 +411,17 @@ img {
 }
 .container {
   position: relative;
+  width: 100%;
   max-width: 1920px;
-  padding: 15px 80px 22px 80px;
-  margin: 0 auto;
-  height: 100vh;
-  max-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-@media (max-width: 1920px) {
-  .container {
-    max-width: 1700px;
-    padding: 15px 40px 22px 40px;
-    /* або інше значення, залежно від вашого макету */
-  }
-}
-@media (max-width: 1600px) {
-  .container {
-    max-width: 1316px;
-    /* або інше значення, залежно від вашого макету */
-  }
-}
-@media (max-width: 1300px) {
-  .container {
-    max-width: 1050px;
-  }
-}
-@media (max-width: 1100px) {
-  .container {
-    max-width: 920px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 800px;
-  }
-}
-@media (max-width: 850px) {
-  .container {
-    max-width: 767px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
 .progress {
   position: relative;
   border: 10px solid transparent;
@@ -989,16 +955,9 @@ input[name=provider]:checked + .step-two-label {
   flex-direction: column;
 }
 
-.step-eight-content-top {
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 5px;
-  background-color: #eb3d00;
-}
-
 .step-eight-content-text {
   font-size: 170px;
-  color: #FFCF21;
+  color: #ffcf21;
 }
 
 @media (min-width: 1600px) {
@@ -1013,7 +972,7 @@ input[name=provider]:checked + .step-two-label {
 .step-free-content-text {
   font-size: 250px;
   line-height: 0.9;
-  color: #FFCF21;
+  color: #ffcf21;
 }
 
 .step-free-text-box {

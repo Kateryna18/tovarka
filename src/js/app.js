@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
         currentStep = 22;
         // Замінюємо кнопку на посилання на останньому кроці
         nextBtn.outerHTML = `
-      <a href="https://leeloo.course-lgt.com/y5yp3i" class="box-down__button">
+      <a href="https://leeloo.course-lgt.com/y5yp3i" class="box-down__button" style="padding: 20px; gap: 0;">
         <div class="box-down__button-thumb">
           <img src="./img/bg-button.png" alt="bg button" />
         </div>
