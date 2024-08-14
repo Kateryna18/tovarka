@@ -10,12 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const progressBar = document.getElementById("progress");
   const stepMarkers = document.querySelectorAll(".step");
   const nextBtn = document.getElementById("next");
-  const nextBtnName = document.getElementById("text-button")
+  const nextBtnName = document.getElementById("text-button");
   let currentStep = 0;
-  let userChoices = {}; 
+  let userChoices = {};
   let isGoingBack = false;
 
   function showStep(stepIndex) {
+    console.log(currentStep);
     steps.forEach((step, index) => {
       step.style.display = index === stepIndex ? "block" : "none";
     });
@@ -75,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function handleNextStep() {
-
     switch (currentStep) {
       case 3:
         const step4Choice = document.querySelector(
@@ -83,19 +83,21 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         if (step4Choice) {
           userChoices.step4 = step4Choice.value;
-          if (step4Choice.value === "1") currentStep = 7;
+          if (step4Choice.value === "1") currentStep = 4;
           if (step4Choice.value === "2") {
             currentStep = 5;
             isGoingBack = true;
-          };
+          }
           if (step4Choice.value === "3") {
-            isGoingBack = true;
-            currentStep = 6
-          };
+            currentStep = 6;
+          }
         }
         break;
-      case 5:
+      case 4:
       case 6:
+        currentStep = 7;
+        break;
+      case 5:
         isGoingBack = false;
         currentStep = 3;
         break;
@@ -155,6 +157,22 @@ document.addEventListener("DOMContentLoaded", function () {
       case 20:
       case 21:
         currentStep = 22;
+        // Замінюємо кнопку на посилання на останньому кроці
+        nextBtn.outerHTML = `
+      <a href="https://leeloo.course-lgt.com/y5yp3i" class="box-down__button">
+        <div class="box-down__button-thumb">
+          <img src="./img/bg-button.png" alt="bg button" />
+        </div>
+        <div class="box-down__button-content">
+          <p class="box-down__button-text" id="text-button">Хочу на навчання</p>
+          <div class="box-down__button-icon">
+            <div class="box-down__box-icon">
+              <img src="./img/arrow-right.png" alt="arrow-right" />
+            </div>
+          </div>
+        </div>
+      </a>
+    `;
         break;
       case 22:
         break;
@@ -164,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     showStep(currentStep);
-    
   }
 
   function updateButtonText(isGoingBack) {
