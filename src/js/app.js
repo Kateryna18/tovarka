@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let isGoingBack = false;
 
   function showStep(stepIndex) {
-    console.log(currentStep);
     steps.forEach((step, index) => {
       step.style.display = index === stepIndex ? "block" : "none";
     });
