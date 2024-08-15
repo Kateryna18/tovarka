@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const progressBar = document.getElementById("progress");
   const stepMarkers = document.querySelectorAll(".step");
   const nextBtn = document.getElementById("next");
+  const nextBtnMb = document.getElementById("next-mb");
   const nextBtnName = document.getElementById("text-button");
   let currentStep = 0;
   let userChoices = {};
@@ -193,5 +194,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   nextBtn.addEventListener("click", handleNextStep);
+  nextBtnMb.addEventListener("click", handleNextStep);
   showStep(currentStep);
 });
