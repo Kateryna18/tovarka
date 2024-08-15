@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case 21:
         currentStep = 22;
         // Замінюємо кнопку на посилання на останньому кроці
-        nextBtn.outerHTML = `
+          nextBtn.outerHTML = `
       <a href="https://leeloo.course-lgt.com/y5yp3i" class="box-down__button" style="padding: 20px; gap: 0;">
         <div class="box-down__button-thumb">
           <img src="./img/bg-button.png" alt="bg button" />
@@ -187,9 +187,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateButtonText(isGoingBack) {
     if (isGoingBack) {
-      nextBtnName.textContent = "Ще раз";
+        nextBtnName.textContent = "Ще раз";
     } else {
-      nextBtnName.textContent = "Продовжити";
+        nextBtnName.textContent = "Продовжити";
     }
   }
 
