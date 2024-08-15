@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("next");
   const nextBtnMb = document.getElementById("next-mb");
   const nextBtnName = document.getElementById("text-button");
+  const nextBtnNameMb = document.getElementById("text-button-mb");
   let currentStep = 0;
   let userChoices = {};
   let isGoingBack = false;
@@ -159,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case 21:
         currentStep = 22;
         // Замінюємо кнопку на посилання на останньому кроці
-          nextBtn.outerHTML = `
+        nextBtn.outerHTML = `
       <a href="https://leeloo.course-lgt.com/y5yp3i" class="box-down__button" style="padding: 20px; gap: 0;">
         <div class="box-down__button-thumb">
           <img src="./img/bg-button.png" alt="bg button" />
@@ -174,6 +175,21 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </a>
     `;
+        nextBtnMb.outerHTML = `
+    <a href="https://leeloo.course-lgt.com/y5yp3i" class="box-down__button" style="padding: 20px; gap: 0;">
+      <div class="box-down__button-thumb">
+        <img src="./img/bg-button.png" alt="bg button" />
+      </div>
+      <div class="box-down__button-content">
+        <p class="box-down__button-text" id="text-button">Хочу на навчання</p>
+        <div class="box-down__button-icon">
+          <div class="box-down__box-icon">
+            <img src="./img/arrow-right.png" alt="arrow-right" />
+          </div>
+        </div>
+      </div>
+    </a>
+  `;
         break;
       case 22:
         break;
@@ -187,9 +203,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateButtonText(isGoingBack) {
     if (isGoingBack) {
-        nextBtnName.textContent = "Ще раз";
+      nextBtnName.textContent = "Ще раз";
+      nextBtnNameMb.textContent = "Ще раз";
     } else {
-        nextBtnName.textContent = "Продовжити";
+      nextBtnName.textContent = "Продовжити";
+      nextBtnNameMb.textContent = "Продовжити";
     }
   }
 
