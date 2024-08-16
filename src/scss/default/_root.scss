@@ -1844,11 +1844,13 @@ input[type="radio"]:checked + .v2-label {
   height: 100px;
   cursor: pointer;
   transition: $hover-transition;
+  border-radius: 20px;
 }
 
 @media (min-width: 768px) {
   .box-down__button {
     width: 200px;
+    border-radius: 0;
   }
 }
 
